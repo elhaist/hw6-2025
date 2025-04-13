@@ -7,8 +7,9 @@ window.addEventListener("load", function() {
 	video.loop=false;
 	video.volume = 1.0;
 	video.load();
+	
 	document.querySelector("#volume").innerHTML = (video.volume * 100) +"%";
-	this.document.querySelector("#slider").value = video.volume * 100;
+	document.querySelector("#slider").value = video.volume * 100;
 });
 
 document.querySelector("#play").addEventListener("click", function() {
