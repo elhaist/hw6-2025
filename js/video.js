@@ -1,13 +1,13 @@
 var video;
 
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
-	video=document.querySelector("#player1")
+	console.log("Good job opening the window");
+	video = document.querySelector("#player1");
 	video.autoplay=false;
 	video.loop=false;
 	video.volume = 1.0;
 	video.load();
-	
+
 	document.querySelector("#volume").innerHTML = (video.volume * 100) +"%";
 	document.querySelector("#slider").value = video.volume * 100;
 });
